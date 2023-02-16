@@ -8,8 +8,10 @@ import Form from "./modules/form";
 
 window.addEventListener('DOMContentLoaded', () => {
     const slider = new MainSlider({btns : '.next', container: '.page'});
-
     slider.render();
+
+    const modulePageSlider  = new MainSlider({container:'.moduleapp', btns:'.next'});
+    modulePageSlider.render();
 
     const showUpSlider = new MiniSlider({
         container:'.showup__content-slider',
